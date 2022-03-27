@@ -1,7 +1,13 @@
 import react from 'react'
+import Topbar from '../components/Topbar'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 export default function Team(){
     return(
         <div>
+            <Topbar />
+            <Navbar />
 {/*              <!-- Page Header Start -->
  */}            <div class="page-header">
                 <div class="container">
@@ -168,7 +174,7 @@ export default function Team(){
             </div>
 {/*             <!-- Team End -->
  */}
-
+<Footer />
         </div>
     )
 }

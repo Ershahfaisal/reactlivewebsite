@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import react from 'react'
 export default function Navbar(){
     return(
@@ -6,29 +7,29 @@ export default function Navbar(){
  */}            <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
+                        <Link to="#" class="navbar-brand">MENU</Link>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Service</a>
-                                <a href="team.html" class="nav-item nav-link">Team</a>
-                                <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                                <Link to="/" class="nav-item nav-link">Home</Link>
+                                <Link to="/About" class="nav-item nav-link">About</Link>
+                                <Link to="/Service" class="nav-item nav-link">Service</Link>
+                                <Link to="/Team" class="nav-item nav-link">Team</Link>
+                                <Link to="/Portfolio" class="nav-item nav-link">Project</Link>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <Link to="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</Link>
                                     <div class="dropdown-menu">
-                                        <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                        <Link to="/Blog" class="dropdown-item">Blog Page</Link>
+                                        <Link to="/Single" class="dropdown-item">Single Page</Link>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <Link to="/Contact" class="nav-item nav-link">Contact</Link>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="https://htmlcodex.com/construction-company-html-template">Download Pro Version</a>
+                                <Link class="btn" to="https://htmlcodex.com/construction-company-html-template">Download Pro Version</Link>
                             </div>
                         </div>
                     </nav>

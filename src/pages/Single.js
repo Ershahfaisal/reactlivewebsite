@@ -1,8 +1,13 @@
 import react from 'react'
+import Topbar from '../components/Topbar'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 export default function Single(){
     return(
         <div>
-            
+            <Topbar />
+            <Navbar />
 
 {/*             <!-- Page Header Start -->
  */}            <div class="page-header">
@@ -552,7 +557,7 @@ export default function Single(){
             </div>
 {/*             <!-- Single Post End-->   
  */}
-
+    <Footer />
         </div>
     )
 }

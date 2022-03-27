@@ -1,8 +1,13 @@
 import react from 'react'
+import Topbar from '../components/Topbar'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 export default function Blog(){
     return(
         <div>
-               
+               <Topbar />
+               <Navbar />
 {/*                <!-- Page Header Start -->
  */}            <div class="page-header">
                 <div class="container">
@@ -164,7 +169,7 @@ export default function Blog(){
             </div>
 {/*             <!-- Blog End -->
  */}
-
+<Footer />
         </div>
     )
 }
